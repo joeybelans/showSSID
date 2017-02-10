@@ -2,8 +2,8 @@
 Generates continuous probe requests to identify hidden SSIDs
 
 ##Demo##
-# python showSSID.py -i wlan1mon -f ssids -d .1 -c 5
 ```
+python showSSID.py -i wlan1mon -f ssids -d .1 -c 5
 [*] 802.11 Probe Request: SSID=[ssid1], count=5
 [*] 802.11 Probe Request: SSID=[ssid2], count=5
 [*] 802.11 Probe Request: SSID=[ssid3], count=5
@@ -15,7 +15,7 @@ Generates continuous probe requests to identify hidden SSIDs
 
 ##Usage##
 ```
-# python showSSID.py -h
+python showSSID.py -h
 usage: showSSID.py [-h] -i interface [-d delay] [-c count] [-m mac]
                    (-s ssid | -f file)
 
