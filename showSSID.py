@@ -14,7 +14,7 @@ parser.add_argument('-i', '--interface', metavar='interface', help='wireless int
 parser.add_argument('-d', '--delay', metavar='delay', help='seconds to delay (default=.3)', default=.3, type=float)
 parser.add_argument('-c', '--count', metavar='count', \
         help='number of packets to send per SSID per iteration (default=10)', default=10, type=int)
-parser.add_argument('-m', '--mac', metavar='mac', help='last 3 octets of mac address (default=00:11:22)', default='00:11:22')
+parser.add_argument('-m', '--mac', metavar='mac', help='last 3 octets of source mac address (default=00:11:22)', default='00:11:22')
 ssid_group = parser.add_mutually_exclusive_group(required=True)
 ssid_group.add_argument('-s', '--ssid', metavar='ssid', help='ssid name')
 ssid_group.add_argument('-f', '--file', metavar='file', help='ssid file')

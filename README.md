@@ -28,7 +28,7 @@ optional arguments:
   -c count, --count count
                         number of packets to send per SSID per iteration
                         (default=10)
-  -m mac, --mac mac     last 3 octets of mac address (default=00:11:22)
+  -m mac, --mac mac     last 3 octets of source mac address (default=00:11:22)
   -s ssid, --ssid ssid  ssid name
   -f file, --file file  ssid file
 ```
