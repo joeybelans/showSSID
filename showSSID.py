@@ -43,10 +43,10 @@ while True:
         essid = Dot11Elt(ID='SSID',info=ssid)
         #dsset = Dot11Elt(ID='DSset',info='\x01')
         pkt = RadioTap()\
-            /Dot11(type=0,subtype=4,addr1=dst,addr2=RandMAC()[0:9]+args.mac,addr3=dst)\
+            /Dot11(type=0,subtype=4,addr1=dst,addr2=str(RandMAC())[0:9]+args.mac,addr3=dst)\
             /param/essid/rates
 
-        print '[*] 802.11 Probe Request: SSID=[%s], count=%d' % (ssid,args.count)
+        print ('[*] 802.11 Probe Request: SSID=[%s], count=%d' % (ssid,args.count))
         try:
             sendp(pkt,count=args.count,inter=args.delay,verbose=0,iface=args.interface)
         except:
